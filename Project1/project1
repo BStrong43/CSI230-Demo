@@ -1,0 +1,50 @@
+#!/bin/bash
+
+getMainOutput()
+{
+uname -a
+uname -r
+hostname -i
+lscpu | grep Architecture
+free -h
+df
+hostname -I
+date '+%s'
+}
+
+extraOutOne()
+{
+echo cal
+}
+
+extraOutTwo()
+{
+echo "Logged in as " whoami
+}
+
+
+if [[ $EUID -ne 0 ]]; then
+	echo "Must run as root"
+	exit 1
+fi
+
+#set up initial html file
+echo "<html>"
+echo "	<head>"
+echo "	  <title>"
+echo "System Info"
+echo "</title>"
+echo "</head>"
+echo "<body>"
+
+getMainOutput
+extraOutOne
+extraOutTwo
+
+#closing html stuff
+echo "</body>"
+echo "</html>"
+
+
+
+exit 0
