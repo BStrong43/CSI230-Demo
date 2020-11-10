@@ -39,7 +39,7 @@ do
   echo $newU
 
   #Generate new Passcode
-  newPass=$(openssl rand -hex 12)
+  newPass=$(openssl rand -base64 5)
   echo $newPass
 
   #user existance test

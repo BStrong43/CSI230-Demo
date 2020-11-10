@@ -27,8 +27,8 @@ int main()
     cout << "Avg of Nums: " << doAvg(numbers) << endl;
     cout << "Low of Nums: " << doLow(numbers) << endl;
 
-    cout << "Calling camelCase with 'i just want this to work god please im so tired'" << endl;
-    cout << camelCase("i just want this to work god please im so tired");
+    cout << "Calling camelCase with 'ok it works now i can go to bed'" << endl;
+    cout << camelCase("ok it works now i can go to bed") << endl;
 
     return EXIT_SUCCESS;
 }
