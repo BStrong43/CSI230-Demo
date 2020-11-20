@@ -5,7 +5,7 @@ BIN     := bin
 SRC     := src
 INCLUDE := include
 
-LIBRARIES   := -lboost_program_options -lboost_algorithms
+LIBRARIES   := -lboost_program_options
 EXECUTABLE  := main
 
 

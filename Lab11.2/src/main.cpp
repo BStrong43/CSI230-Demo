@@ -1,8 +1,8 @@
 #include <iostream>
 #include <boost/program_options.hpp>
 #include <boost/algorithm/algorithm.hpp>
-//#include <boost/algorithm/string.hpp>
-//#include <boost/algorithm/hex.hpp>
+#include <boost/algorithm/string.hpp>
+#include <boost/algorithm/hex.hpp>
 
 //boost namespaces
 using namespace boost::program_options;
@@ -10,13 +10,13 @@ using namespace boost::algorithm;
 
 void tolowerCase(std::string words)
 {//from boost algorithms
-    //to_lower(words);
+    to_lower(words);
     std::cout << words << std::endl;
 }
 
 void toupperCase(std::string words)
 {//from boost algorithms
-    //to_upper(words);
+    to_upper(words);
     std::cout << words << std::endl;
 }
 
@@ -46,7 +46,7 @@ int main(int argc, const char *argv[])
   {
     std::cerr << ex.what() << '\n';
   }
-    std::cout<<"Hello World"<<std::endl;
+    //std::cout<<"Hello World"<<std::endl;
 
     if(argc = 0)
         std::cout<< "please pass options and parameters" << std::endl;
